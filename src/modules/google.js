@@ -59,11 +59,11 @@ class GoogleScraper extends Scraper {
             organic_results.forEach((el) => {
 
                 let serp_obj = {
-                    link: _attr(el, '.rc a', 'href'),
-                    title: _text(el, '.rc a h3'),
-                    snippet: _text(el, '.rc > div:nth-child(2) span span'),
-                    visible_link: _text(el, '.rc cite'),
-                    date: _text(el, '.rc > div:nth-child(2) span.f'),
+                    link: _attr(el, '.tF2Cxc a', 'href'),
+                    title: _text(el, '.tF2Cxc a h3'),
+                    snippet: _text(el, '.tF2Cxc > div:nth-child(2) span span'),
+                    visible_link: _text(el, '.tF2Cxc cite'),
+                    date: _text(el, '.tF2Cxc > div:nth-child(2) span.f'),
                 };
 
                 if (serp_obj.date) {
